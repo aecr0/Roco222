@@ -132,6 +132,10 @@ When working on the URDF we first attempted to put all the robot files in at onc
 
 Using the template the ROS lab give us we manage to get a shape and used that to base of what the rest of our code needed to look like. after talking with other groups we then used the idea of a mesh so that we could use our stl files from the 3d printed model is meant that we has a 3D reprenstaiton for our hand. 
 
+![pictures of hand/arm](https://github.com/aecr0/Roco222/blob/master/20180118_183540.jpg "pictures of hand/arm")
+![pictures of base](https://github.com/aecr0/Roco222/blob/master/20180118_183600.jpg "pictures of base")
+![pictures of base](https://github.com/aecr0/Roco222/blob/master/20180118_184002.jpg "pictures of base")
+
 
 ```xml
 
