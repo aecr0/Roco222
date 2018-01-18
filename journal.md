@@ -42,8 +42,7 @@ main folder, home
 mkdir- makes a directory e.g $ mkdir ROCO222
  
 ### $ echo "Hello" >hello.md
-echo- makes file called hello.md in which ever folder you are currently in and then   
-then in the file writes hello
+echo- makes file called hello.md in which ever folder you are currently in and then in the file writes hello
   
 ### $ cp hello.md hello-again.md
 cp- copys contents of one file into another
@@ -64,10 +63,9 @@ cat- prints what the file says
 
 # Motor
 
-  The first motor we made was from cork, copper wire/tape, paperclips, magents and a board to mount it on. To build the commutator we    wrapped coopper wire around the cork, the total number of turns was around 100. we then added a aramature on the end of this and soldered the wires to it. 
+  The first motor we made was from cork, copper wire/tape, paperclips, magnets and a board to mount it on. To build the commutator we    wrapped copper wire around the cork, the total number of turns was around 100. We then added a armature on the end of this and soldered the wires to it. 
     
- The basic purpose of commutation is to ensure that the torque acting on the armature  
- is always in the same direction.
+ The basic purpose of commutator is to ensure that the torque acting on the armature is always in the same direction.
 
  ![Photo of communtator](https://github.com/aecr0/Roco222/blob/master/ipad%2012102017%20068.JPG "Photo of cummuntator")    
   
@@ -75,9 +73,7 @@ cat- prints what the file says
 
  The armature interacts with the magnetic field (magnetic flux).
  ![Photo of armature coil](https://github.com/aecr0/Roco222/blob/master/ipad%2012102017%20069.JPG "photo of armature coil")
-     
-
-      
+         
 ![photo of complete motor](https://github.com/aecr0/Roco222/blob/master/ipad%2012102017%20071.JPG "complete motor")
   
   The problems with the armature was because it was not attached to anything solid it meant that if anysort of pressure was applied the tape got damaged so when we finished constructing the motor when trying to make it spin of its own occured it got stuck in the the crumpled tape.
