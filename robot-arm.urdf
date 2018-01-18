@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<robot name="ROCO_ROBOT_ARM">
+
+ <material name="blue">
+  <color rgba="0 0 1 1"/>
+ </material>
+
+ <material name="white">
+  <color rgba="1 1 1 1"/>
+ </material>
+
+ <material name="green">
+  <color rgba="0.2 0.6 0.3 1"/>
+ </material>
+
+ <material name="red">
+  <color rgba="1 0 0 1"/>
+ </material>
+
+  <!--<link name="base_lower">
+    <visual>
+      <geometry>
+         cylinder length="0.015" radius="0.070"/> 
+	<mesh filename="file:///home/student/ROCO222_ROS/Robot_project/models/Stepper_shield_base.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+	  <material name="white"/>
+	  <origin rpy="1.57 0 1.57" xyz="0 0 0.005" />
+    </visual>
+  </link>-->
+
+  <!--<link name="base_upper">
+    <visual>
+      <geometry>
+        < cylinder length="0.015" radius="0.070"/> 
+	<mesh filename="file:///home/student//ROCO222_ROS/Robot_project/models/STL_files/stepper_head.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+	  <material name="white"/>
+	  <origin rpy="1.57 0 1.57" xyz="0 0 0.005" />
+    </visual>
+  </link>-->
+
+
+
+  <link name="side_L_1">
+    <visual>
+      <geometry>
+        <!-- <box size="0.040 0.005 0.125"/> -->
+	<mesh filename="file:///home/student/ROCO222_ROS/Robot_project/models/STL_files/lower_arm.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <origin rpy="0 1.57 0" xyz="0 0 0" />
+      <material name="green"/>
+    </visual>
+  </link>
+
+  <link name="side_L_2">
+    <visual>
+      <geometry>
+        <!-- <box size="0.040 0.005 0.125"/> -->
+	<mesh filename="file:///home/student/ROCO222_ROS/Robot_project/models/STL_files/lower_arm.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <origin rpy="0 1.57 0" xyz="0 0 0" />
+      <material name="green"/>
+    </visual>
+  </link>
+
+  <link name="c1">
+    <visual>
+      <geometry>
+        <!-- <box size="0.040 0.005 0.125"/> -->
+	<mesh filename="file:///home/student/ROCO222_ROS/Robot_project/models/STL_files/lower_arm_connector.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <origin rpy="0 1.57 0" xyz="0 0 0" />
+      <material name="green"/>
+    </visual>
+  </link>
+
+  <link name="c2">
+    <visual>
+      <geometry>
+        <!-- <box size="0.040 0.005 0.125"/> -->
+	<mesh filename="file:///home/student/ROCO222_ROS/Robot_project/models/STL_files/lower_arm_connector.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <origin rpy="0 1.57 0" xyz="0 0 0" />
+      <material name="green"/>
+    </visual>
+  </link>
+
+
+
+  <link name="side_F_1">
+    <visual>
+      <geometry>
+        <!-- box size="0.040 0.005 0.125"/> -->
+	<mesh filename="file:///home/student/ROCO222_ROS/Robot_project/models/STL_files/forearm_othersSIDE.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <origin rpy="0 1.57 0" xyz="0 0 0" />
+      <material name="green"/>
+    </visual>
+  </link>
+
+  <link name="side_F_2">
+    <visual>
+      <geometry>
+        <!-- box size="0.040 0.005 0.125"/> -->
+	<mesh filename="file:///home/student/ROCO222_ROS/Robot_project/models/STL_files/forearm_side.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <origin rpy="0 1.57 0" xyz="0 0 0" />
+      <material name="green"/>
+    </visual>
+  </link>
+
+
+  <link name="side_F_c1A">
+    <visual>
+      <geometry>
+        <!-- box size="0.040 0.005 0.125"/> -->
+	<mesh filename="file:///home/student/ROCO222_ROS/Robot_project/models/STL_files/forearm_connector.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <origin rpy="0 1.57 0" xyz="0 0 0" />
+      <material name="green"/>
+    </visual>
+  </link>
+
+  <link name="side_F_c1B">
+    <visual>
+      <geometry>
+        <!-- box size="0.040 0.005 0.125"/> -->
+	<mesh filename="file:///home/student/ROCO222_ROS/Robot_project/models/STL_files/forearm_connector.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <origin rpy="0 1.57 0" xyz="0 0 0" />
+      <material name="green"/>
+    </visual>
+  </link>
+
+
+  <link name="Hand_back">
+    <visual>
+      <geometry>
+        <!-- box size="0.040 0.005 0.125"/> -->
+	<mesh filename="file:///home/student/ROCO222_ROS/Robot_project/models/STL_files/Hand_back_part.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <origin rpy="0 1.57 0" xyz="0 0 0" />
+      <material name="green"/>
+    </visual>
+  </link>
+
+  <link name="Hand_front">
+    <visual>
+      <geometry>
+        <!-- box size="0.040 0.005 0.125"/> -->
+	<mesh filename="file:///home/student/ROCO222_ROS/Robot_project/models/STL_files/Hand_Top.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <origin rpy="0 1.57 0" xyz="0 0 0" />
+      <material name="green"/>
+    </visual>
+  </link>
+
+  <link name="c3">
+    <visual>
+      <geometry>
+        <!-- box size="0.040 0.005 0.125"/> -->
+	<mesh filename="file:///home/student/ROCO222_ROS/Robot_project/models/STL_files/forearm_connector.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <origin rpy="0 1.57 0" xyz="0 0 0" />
+      <material name="green"/>
+    </visual>
+  </link>
+
+ <link name="c4">
+    <visual>
+      <geometry>
+        <!-- box size="0.040 0.005 0.125"/> -->
+	<mesh filename="file:///home/student/ROCO222_ROS/Robot_project/models/STL_files/forearm_connector.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <origin rpy="0 1.57 0" xyz="0 0 0" />
+      <material name="green"/>
+    </visual>
+  </link>
+
+ <link name="Hand_finger">
+    <visual>
+      <geometry>
+        <!-- box size="0.040 0.005 0.125"/> -->
+	<mesh filename="file:///home/student/ROCO222_ROS/Robot_project/models/STL_files/Fingery_part.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <origin rpy="0 1.57 0" xyz="0 0 0" />
+      <material name="green"/>
+    </visual>
+  </link>
+
+  <!-- <joint name="Stepper_base" type="fixed">
+    <axis xyz="0 0 1" />
+    <limit effort="1000" lower="-3.14" upper="3.14" velocity="0.5" /> 
+    <parent link="base_lower"/>
+    <child link="base_upper"/>
+    <origin xyz="0 0 0" />
+  </joint>-->
+
+
+  <!--<joint name="Base_side_L_1" type="revolute">
+    <axis xyz="0 1 0" />
+    <limit effort="1000" lower="-1.57" upper="1.57" velocity="0.1" />
+    <parent link="base_upper"/>
+    <child link="side_L_1"/>
+    <origin xyz="0 0.02 0.105" />
+  </joint>-->
+
+  <!--<joint name="Base_side_L_2" type="revolute">
+    <axis xyz="0 1 0" />
+    <limit effort="1000" lower="-1.57" upper="1.57" velocity="0.1" />
+    <parent link="base_upper"/>
+    <child link="side_L_2"/>
+    <origin xyz="0 0.02 0.105" />
+  </joint> -->
+
+  <joint name="side_L_c1A" type="fixed">
+    <!-- <axis xyz="0 0 1" />
+    <limit effort="1000" lower="-3.14" upper="3.14" velocity="0.5" /> -->
+    <parent link="side_L_2"/>
+    <child link="c1"/>
+    <origin xyz="0 0 0" />
+  </joint>
+
+ <joint name="side_L_c1B" type="fixed">
+    <!-- <axis xyz="0 0 1" />
+    <limit effort="1000" lower="-3.14" upper="3.14" velocity="0.5" /> -->
+    <parent link="side_L_2"/>
+    <child link="c2"/>
+    <origin xyz="0 0 0" />
+  </joint>
+
+  <joint name="side_L_c2A" type="fixed">
+    <!-- <axis xyz="0 0 1" />
+    <limit effort="1000" lower="-3.14" upper="3.14" velocity="0.5" /> -->
+    <parent link="side_L_1"/>
+    <child link="c1"/>
+    <origin xyz="0 0 0" />
+  </joint>
+
+ <joint name="side_L_c2B" type="fixed">
+    <!-- <axis xyz="0 0 1" />
+    <limit effort="1000" lower="-3.14" upper="3.14" velocity="0.5" /> -->
+    <parent link="side_L_1"/>
+    <child link="c2"/>
+    <origin xyz="0 0 0" />
+  </joint>
+
+
+  <joint name="side_F_c1A" type="fixed">
+    <!-- <axis xyz="0 0 1" />
+    <limit effort="1000" lower="-3.14" upper="3.14" velocity="0.5" /> -->
+    <parent link="side_F_2"/>
+    <child link="c3"/>
+    <origin xyz="0 0 0" />
+  </joint>
+
+ <joint name="side_F_c1B" type="fixed">
+    <!-- <axis xyz="0 0 1" />
+    <limit effort="1000" lower="-3.14" upper="3.14" velocity="0.5" /> -->
+    <parent link="side_F_2"/>
+    <child link="c4"/>
+    <origin xyz="0 0 0" />
+  </joint>
+
+  <joint name="side_F_c2A" type="fixed">
+    <!-- <axis xyz="0 0 1" />
+    <limit effort="1000" lower="-3.14" upper="3.14" velocity="0.5" /> -->
+    <parent link="side_F_1"/>
+    <child link="c3"/>
+    <origin xyz="0 0 0" />
+  </joint>
+
+ <joint name="side_F_c2B" type="fixed">
+    <!-- <axis xyz="0 0 1" />
+    <limit effort="1000" lower="-3.14" upper="3.14" velocity="0.5" /> -->
+    <parent link="side_F_1"/>
+    <child link="c4"/>
+    <origin xyz="0 0 0" />
+  </joint>
+
+  <joint name="side_FL1" type="revolute">
+    <axis xyz="0 1 0" />
+    <limit effort="1000" lower="-1.57" upper="1.57" velocity="0.1" />
+    <parent link="side_L_1"/>
+    <child link="side_F_1"/>
+    <origin xyz="0 0.02 0.105" />
+  </joint>
+
+  <joint name="side_FL2" type="revolute">
+    <axis xyz="0 1 0" />
+    <limit effort="1000" lower="-1.57" upper="1.57" velocity="0.1" />
+    <parent link="side_L_2"/>
+    <child link="side_F_2"/>
+    <origin xyz="0 0.02 0.105" />
+  </joint>
+
+
+ <joint name="side_F_Hand" type="fixed">
+    <parent link="c4"/>
+    <child link="Hand_back"/>
+    <origin xyz="0 0 0" />
+  </joint>
+
+ <joint name="Hand_FB" type="fixed">
+    
+    <parent link="Hand_back"/>
+    <child link="Hand_front"/>
+    <origin xyz="0 0 0" />
+  </joint>
+
+
+ <joint name="Finger" type="revolute">
+    <axis xyz="0 0 1" />
+    <limit effort="1000" lower="-3.14" upper="3.14" velocity="0.5" /> 
+    <parent link="Hand_back"/>
+    <child link="Hand_finger"/>
+    <origin xyz="0 0 0" />
+  </joint>
+
+
+
+
+
+</robot>
+
